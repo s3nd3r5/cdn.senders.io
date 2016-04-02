@@ -1,0 +1,18 @@
+@bg-color: #444;
+@txt-color:#efefef;
+@a-color: #f0f;
+@theme-color: #ef00fc
+
+body.sio.default{
+	color:@txt-color;
+	background-color:@bg-color;
+	a{
+		color:@a-color;
+		&:hover{
+			color: darken(@a-color,10%);
+		}
+		&:focus{
+			color: lighten(@a-color,10%);
+		}
+	}
+}
