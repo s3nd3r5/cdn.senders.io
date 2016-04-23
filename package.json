@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "CDN for senders.io",
   "main": "bin/index.html",
+  "repository": "git@github.com:s3nd3r5/cdn.senders.io"
   "dependencies": {},
   "devDependencies": {
     "del": "^2.2.0",

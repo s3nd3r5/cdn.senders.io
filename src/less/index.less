@@ -1,7 +1,36 @@
-@import './themes/default.less';
 body.sio{
+	font-size:13pt;
+	margin: 0;
+	padding: 0;
+	@import "includes/modules/functions.less";
+	@import "includes/modules/text.less";
+	@import "includes/themes/default.less"; //last-always
+	& .top-nav{
+		position: relative;
+		height: 250px;
+		background-color: @theme-color;
+
+		& .title{
+			.bold;
+			display:inline-block;
+			position: absolute;
+			bottom: 0;
+			left:25px;
+			padding: 10px;
+			color: @title-color;
+			font-size: @ft-lg;
+		}
+		& .links{
+			.a(@alt-a-color);
+		}
+	}
+
 	& .lg-txt{
-		display:block;
-		border-bottom: 1px solid #eee;
+		float:left;
+		margin: 15px 1%;
+		display:inline-block;
+		border-bottom: 1px solid #444;
+		min-height: 250px;
+		width:48%;
 	}
 }

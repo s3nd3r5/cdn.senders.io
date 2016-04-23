@@ -1,0 +1,11 @@
+.a(@clr){
+	a{
+		color:@clr;
+		&:hover{
+			color: darken(@clr,10%);
+		}
+		&:focus{
+			color: lighten(@clr,10%);
+		}
+	}
+}
