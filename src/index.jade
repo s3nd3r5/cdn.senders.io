@@ -6,11 +6,17 @@ html(lang="en")
 	body.sio.default
 		.top-nav
 			span.title CDN / CSS
-		.lg-txt.
+		.article.
+			#[span.title About]
 			This is the CDN Index page for the CSS/Stylings of 
 			#[a(href='https://senders.io') senders.io]
 			This page acts as a reference for all the stylings that are used by the site. 
-		.lg-txt.
-			#[pre.code .lg-txt]
-			These are areas where blocks of text can be displayed. These blocks of text contain an underline and some text 
-			at a half width
+		.article
+			pre.code.
+				CLASS article
+
+				&ltdiv class='article'&gt
+				    Some text describing the website
+				&lt/div&gt
+			p.
+				These are areas where blocks of text can be displayed. These blocks of text contain at desktop widths, a 75% area of text centered to the page. And at tablet and smaller widths simply a 15px margin.

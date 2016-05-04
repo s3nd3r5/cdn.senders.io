@@ -15,7 +15,9 @@ body.sio{
 			display:inline-block;
 			position: absolute;
 			bottom: 0;
-			left:25px;
+			@media(min-width: 768px){
+				left:25px;
+			}
 			padding: 10px;
 			color: @title-color;
 			font-size: @ft-lg;

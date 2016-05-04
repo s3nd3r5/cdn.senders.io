@@ -1,7 +1,7 @@
 @ft-mx: 5em;
 @ft-lg: 3em;
-@ft-md: 1.5em;
-@ft-nm: 1em;
+@ft-md: 17px;
+@ft-nm: 14px;
 @ft-sm: .75em;
 @ft-fm-sans: Helvetica Neue, Helvetica, Arial, sans-serif;
 & .centered{
@@ -9,6 +9,22 @@
 }
 & .bold{
 	font-weight: bold;
+}
+& .article{
+	margin:15px 15px;
+	font-size: @ft-nm;
+	@media(min-width:768px){
+		width:75%;
+		margin:15px auto;
+		font-size: @ft-md;
+	}
+	& > .title{
+		display:block;
+		font-size: 28px;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+
 }
 & pre.code{
 	display:block;
